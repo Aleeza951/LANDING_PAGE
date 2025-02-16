@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuccessHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a SuccessHub</h1>
+        <p>Impulsa tu éxito con nuestras herramientas y recursos exclusivos.</p>
+    </div>
+
+    <section class="about">
+        <h2>¿Qué es SuccessHub?</h2>
+        <p>Una plataforma diseñada para ayudarte a alcanzar el éxito con recursos, mentorías y estrategias efectivas.</p>
+    </section>
+
+
+    <section class="services">
+        <h2>Nuestros Beneficios</h2>
+        <ul>
+            <li>📚 Cursos exclusivos</li>
+            <li>💼 Mentorías personalizadas</li>
+            <li>🚀 Comunidad de emprendedores</li>
+        </ul>
+    </section>
+
+    <section class="subscribe">
+        <h2>Suscríbete para más información</h2>
+        <input type="email" placeholder="Tu correo electrónico">
+        <button class="btn">Suscribirme</button>
+    </section>
+    <a href="formulario.html" class="btn">Ir al Formulario</a>
+
+
+<!-- Botón que abre el modal -->
+<a href="javascript:void(0);" class="btn" onclick="openModal()">Únete Ahora</a>
+
+<!-- Modal de registro -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1>Regístrate en SuccessHub</h1>
+        <form action="procesar_registro.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+// Función para abrir el modal
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+// Función para cerrar el modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+// Cerrar el modal si el usuario hace clic fuera del modal
+window.onclick = function(event) {
+    if (event.target == document.getElementById("myModal")) {
+        closeModal();
+    }
+}
+</script>
+    <footer>
+        <p>Síguenos en redes sociales</p>
+        <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>
