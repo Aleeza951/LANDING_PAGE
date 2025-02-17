@@ -134,22 +134,50 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Button (General) */
-a.btn {
-    display: inline-block;
-    background-color: #3d8575;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin: 15px 0;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Contenedor de los botones */
+.btn-container {
+    display: flex;
+    justify-content: center;  /* Centra los botones horizontalmente */
+    gap: 20px;  /* Espacio entre los botones */
+    margin-top: 30px;  /* Espacio superior */
 }
 
-a.btn:hover {
-    background-color: #3b6e6a;
-    transform: scale(1.05);
+/* Estilo de los botones (ya está en tu código, solo se añaden propiedades para centrarlos) */
+.btn {
+    background-color: #3d8575;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color:#3b6e6a;
+}
+
+.back-btn {
+    background-color: #2196F3;
+}
+
+.back-btn:hover {
+    background-color: #0b7dda;
+}
+/* Eliminar borde y contorno */
+.btn, .back-btn {
+    outline: none;  /* Elimina el contorno */
+    border: none;   /* Elimina cualquier borde */
+    text-decoration: none;  /* Elimina el subrayado predeterminado */
+    box-shadow: none;  /* Elimina sombras aplicadas por el enfoque */
+}
+
+/* Eliminar el borde inferior o contorno al hacer foco */
+.btn:focus, .back-btn:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: none;  /* Asegura que no haya borde inferior al hacer foco */
 }
 
 /* Modal Styles */
