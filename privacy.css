@@ -9,7 +9,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #333;
+    background-color: #3d8575;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -31,20 +31,20 @@ section {
 
 /* Títulos de sección */
 h2 {
-    color: #333;
+    color: #3d8575;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1rem;
-    color: #555;
+    color: #3b6e6a;
     line-height: 1.5;
 }
 
 /* Enlaces */
 a {
-    color: #333;
+    color: #3b6e6a;
     text-decoration: none;
 }
 
@@ -52,10 +52,24 @@ a:hover {
     color: #007BFF;
     text-decoration: underline;
 }
+button {
+    background-color: #3d8575;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #3b6e6a;
+}
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #3d8575;
     color: #fff;
     text-align: center;
     padding: 15px;
@@ -69,7 +83,7 @@ footer p {
 
 /* Footer - Enlaces */
 footer a {
-    color: #fff;
+    color: #101214;
     text-decoration: none;
 }
 
