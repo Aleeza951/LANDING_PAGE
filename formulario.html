@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <h1>Regístrate en SuccessHub</h1>
-        <form action="procesar_registro.php" method="POST">
+        <form id="registroForm">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
@@ -19,5 +19,12 @@
             <button type="submit" class="btn">Enviar</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Evita que el formulario se envíe
+            window.location.href = "welcome.html";  // Redirige a la página de bienvenida
+        });
+    </script>
 </body>
 </html>
