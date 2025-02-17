@@ -1,109 +1,269 @@
-/* Reset básico */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: #f8f9fa;
+    background-color: #f4f4f9;
     color: #333;
-    text-align: center;
-    padding: 20px;
+    line-height: 1.6;
+    padding: 0 15px;
+    font-size: 16px;
 }
 
-/* Estilos del contenedor principal */
+/* Container */
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: white;
-    padding: 40px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #4CAF50;
+    color: white;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
 }
 
 h1 {
-    color: #007BFF;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 p {
-    color: #666;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-.btn {
-    text-decoration: none;
-    background: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: 0.3s;
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
 }
 
-.btn:hover {
-    background: #0056b3;
-}
-
-/* Sección Sobre Nosotros */
-.about, .services, .subscribe {
-    margin: 50px auto;
-    max-width: 600px;
-    padding: 20px;
-    background: white;
+.about {
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.about:hover {
+    transform: translateY(-5px);
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-answer {
+    display: none; /* Ocultar la respuesta al principio */
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.faq-item h3:hover {
+    color: #45a049;
+}
 h2 {
-    color: #007BFF;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-ul {
-    list-style: none;
+.services ul {
+    list-style-type: none;
     padding: 0;
 }
 
-ul li {
-    background: #e9ecef;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+.services li {
+    font-size: 1.3rem;
+    margin: 10px 0;
 }
 
-/* Formulario de suscripción */
+/* Subscribe Section */
+.subscribe {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
 .subscribe input {
-    width: 80%;
-    padding: 10px;
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    transition: border 0.3s ease;
+}
+
+.subscribe input:focus {
+    border: 2px solid #4CAF50;
+}
+
+.subscribe button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Button (General) */
+a.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.modal-content:hover {
+    transform: translateY(-5px);
+}
+
+.modal-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.subscribe button {
-    cursor: pointer;
+.modal-content button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Footer */
 footer {
-    margin-top: 50px;
-    padding: 20px;
-    background: #007BFF;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #4CAF50;
     color: white;
-    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    padding: 0 12px;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #f4f4f9;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container, .about, .services, .subscribe {
+        padding: 30px 15px;
+    }
+
+    .subscribe input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .btn, .subscribe button {
+        padding: 10px 25px;
+    }
 }
