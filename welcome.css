@@ -1,33 +1,77 @@
 /* welcome.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3d8575, #3b6e6a);
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    text-align: center;
+    color: white;
+    transition: background 0.5s ease;
 }
 
 .welcome-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 60px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    width: 85%;
+    max-width: 700px;
+    animation: slideIn 2s ease-out;
 }
 
 h1 {
-    color: #007BFF;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 p {
-    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+button {
+    padding: 14px 35px;
     font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    background-color:  #3d8575;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color:  #3b6e6a;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color:  #3d8575;
+    transform: translateY(0);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

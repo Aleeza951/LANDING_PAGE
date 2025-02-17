@@ -39,7 +39,7 @@
 
 .contact-container button {
     padding: 12px 30px;
-    background-color: #4CAF50;
+    background-color: #3d8575;
     color: white;
     border: none;
     border-radius: 5px;
@@ -49,5 +49,30 @@
 }
 
 .contact-container button:hover {
-    background-color: #45a049;
+    background-color: #3b6e6a;
+}
+/* Estilo general para el botón */
+.btn {
+    background-color: #3d8575;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:  #3b6e6a;
+}
+
+/* Botón especial para volver al inicio */
+.back-btn {
+    background-color: #2196F3;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #1976D2;
 }

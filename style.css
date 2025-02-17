@@ -18,7 +18,7 @@ body {
 .container {
     text-align: center;
     padding: 50px 0;
-    background-color: #4CAF50;
+    background-color: #3d8575;
     color: white;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -73,11 +73,11 @@ section {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #4CAF50;
+    color: #3d8575;
 }
 
 .faq-item h3:hover {
-    color: #45a049;
+    color: #3d8575;
 }
 h2 {
     font-size: 2.5rem;
@@ -115,12 +115,12 @@ h2 {
 }
 
 .subscribe input:focus {
-    border: 2px solid #4CAF50;
+    border: 2px solid #3b6e6a;
 }
 
 .subscribe button {
     padding: 12px 30px;
-    background-color: #4CAF50;
+    background-color: #3d8575;
     color: white;
     border: none;
     border-radius: 5px;
@@ -130,14 +130,14 @@ h2 {
 }
 
 .subscribe button:hover {
-    background-color: #45a049;
+    background-color: #3b6e6a;
     transform: scale(1.05);
 }
 
 /* Button (General) */
 a.btn {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #3d8575;
     color: white;
     padding: 12px 30px;
     text-decoration: none;
@@ -148,7 +148,7 @@ a.btn {
 }
 
 a.btn:hover {
-    background-color: #45a049;
+    background-color: #3b6e6a;
     transform: scale(1.05);
 }
 
@@ -196,7 +196,7 @@ a.btn:hover {
 .modal-content button {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #3d8575;
     color: white;
     border: none;
     border-radius: 5px;
@@ -206,7 +206,7 @@ a.btn:hover {
 }
 
 .modal-content button:hover {
-    background-color: #45a049;
+    background-color: #3b6e6a;
     transform: scale(1.05);
 }
 
@@ -231,7 +231,7 @@ a.btn:hover {
 footer {
     text-align: center;
     padding: 25px 0;
-    background-color: #4CAF50;
+    background-color: #3d8575;
     color: white;
     margin-top: 50px;
     box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.1);
