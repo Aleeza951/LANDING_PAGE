@@ -26,7 +26,7 @@
         <input type="email" placeholder="Tu correo electrónico">
         <button class="btn">Suscribirme</button>
     </section>
-    
+
  <section>
     <!-- Pregunta 1 -->
     <div class="faq-item">
@@ -107,6 +107,17 @@
                 answer.style.display = "none"; // Oculta la respuesta
             }
         }
+
+        // Función para mostrar el modal de confirmación
+function showConfirmation() {
+    document.getElementById("confirmationModal").style.display = "block";
+}
+
+// Función para cerrar el modal de confirmación
+function closeConfirmationModal() {
+    document.getElementById("confirmationModal").style.display = "none";
+}
+
     </script>
 
     <footer>

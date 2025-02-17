@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida a SuccessHub</title>
+    <link rel="stylesheet" href="suscribirme.css">
+</head>
+<body>
+    <section class="subscribe">
+        <h2>Suscríbete para más información</h2>
+        <input type="email" id="subscriberEmail" placeholder="Tu correo electrónico">
+        <button class="btn" onclick="showConfirmation()">Suscribirme</button>
+    </section>
+    
+    <!-- Modal de Confirmación -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeConfirmationModal()">&times;</span>
+            <h2>¡Gracias por suscribirte!</h2>
+            <p>Te hemos enviado un correo de confirmación.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
