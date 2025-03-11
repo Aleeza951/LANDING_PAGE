@@ -38,6 +38,8 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s;
+    position: relative;
+    left: 40rem;
 }
 
 button:hover {
@@ -50,4 +52,45 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+/* Para tabletas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 15px;
+    }
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    button {
+        left: 0;
+        width: 40%;
+        padding: 12px;
+        position: relative;
+        left: 12rem;
+    }
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        padding: 10px;
+    }
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+    button {
+        left: 0;
+        width: 40%;
+        padding: 10px;
+        position: relative;
+        left: 8rem;
+    }
 }
