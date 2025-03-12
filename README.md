@@ -75,6 +75,12 @@ Un contenedor centrado que contiene el mensaje de agradecimiento, la notificaci�
 - Los usuarios verán el mensaje de agradecimiento y se les notificará sobre el correo de confirmación.
 - Pueden hacer clic en el botón "Volver al inicio" para regresar a la página principal.
 
+# únete 
+
+![Únete](unete.png)
+
+Este código muestra un botón "Únete Ahora" que abre un modal con un formulario para registrarse. El formulario pide el nombre y correo electrónico, y tiene un botón para enviarlo. El modal se cierra al hacer clic en la "X".
+
 # Página "Gracias por tu mensaje"
 ## Resumen
 
