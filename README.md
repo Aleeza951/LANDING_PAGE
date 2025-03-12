@@ -37,6 +37,14 @@ SuccessHub es una plataforma en línea diseñada para ayudar a las personas a al
 - Botón de Suscripción: Permite a los usuarios ingresar su correo para recibir información.
 - Animaciones y Transiciones: Efectos sutiles en botones y contenedores para mejorar la experiencia del usuario.
 
+
+# Suscripción
+
+![ParaSubscribe](SubscribeLine.png)
+
+Esta sección permite a los usuarios suscribirse para recibir más información. Incluye un título y un formulario donde pueden ingresar su correo electrónico. Al enviarlo, serán dirigidos a otra página. El botón de suscripción facilita la acción.
+
+
 # Página "Gracias por suscribirte"
 ## Resumen
 
