@@ -4,6 +4,8 @@
 
 SuccessHub es una plataforma en línea diseñada para ayudar a las personas a alcanzar sus metas profesionales y personales. Ofrece cursos exclusivos, mentorías personalizadas y una comunidad de emprendedores.
 
+![Home](home.png)
+
  ## Características
 
 - Página de inicio con introducción a SuccessHub.
@@ -39,7 +41,10 @@ SuccessHub es una plataforma en línea diseñada para ayudar a las personas a al
 ## Resumen
 
 La página "Gracias por suscribirte" es una página de agradecimiento que se muestra después de que un usuario se suscribe a SuccessHub. Esta página confirma la suscripción y notifica al usuario que se ha enviado un correo de confirmación. También proporciona un botón para regresar a la página de inicio.
-Características
+
+![Subscribe](subscribe.png)
+
+## Características
 
 - Mensaje de Agradecimiento: Muestra un mensaje agradeciendo al usuario por suscribirse.
 - Notificación de Confirmación: Informa al usuario que se ha enviado un correo de confirmación a su bandeja de entrada.
@@ -66,7 +71,10 @@ Un contenedor centrado que contiene el mensaje de agradecimiento, la notificaci�
 ## Resumen
 
 Página que agradece al usuario por su mensaje y le informa que su consulta ha sido recibida. Incluye un botón para regresar al inicio.
-Características
+
+![Gracias](gracias.png)
+
+## Características
 
 - Mensaje de agradecimiento.
 - Notificación de recepción de consulta.
